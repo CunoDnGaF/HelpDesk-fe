@@ -1,0 +1,147 @@
+body {
+	background-color: rgb(225, 228, 228);
+	font-family: Arial,sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-ticket-button {
+    width: 25%;
+    height: 50px;
+    align-self: flex-end;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    flex-direction: column;
+}
+
+.ticket-container {
+    width: 100%;
+}
+
+.ticket {
+    width: 100%;
+    border : 2px solid black;
+    margin-top: -2px;
+}
+
+.ticket-intro{
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    cursor: pointer;
+}
+
+.ticket-title {
+    flex-grow: 2;
+}
+
+.ticket-date {
+    margin-right: 1%;
+}
+
+.ticket-content {
+    margin-bottom: 1%;
+}
+
+.ticket-checkbox {
+  content: '';
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: white;
+  cursor: pointer;
+}
+
+.checked {
+    background-image: url(../img/check-mark.svg);
+}
+
+.ticket-button-edit {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url(../img/pencil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.ticket-button-remove {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}   
+
+.modal-title {
+    width: 80%;
+    height: 30px;
+    align-self: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.modal-content {
+    width: 80%;
+    height: 50px;
+    align-self: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.modal-buttons {
+    margin-bottom: 5%;
+}
+
+.modal-button-close {
+    width: 30%;
+    cursor: pointer;
+}
+
+.modal-button-ok {
+    width: 30%;
+    cursor: pointer;
+}
+
+.unactive {
+    display: none;
+}
+
+

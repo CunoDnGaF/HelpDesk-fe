@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HelpDesk</title>
+</head>
+<body>
+<h1>HelpDesk</h1>
+<div class="container">
+  <input type="button" id="add-ticket-button" name="add-ticket-button" class="add-ticket-button" value="Добавить тикет">
+  <div class="ticket-container">
+  </div>
+  <div class="modal add unactive">
+    <h2 class="modal-header">Добавить тикет</h2>
+    <label for="modal-title">Краткое описание</label>
+    <input type="text" id="add-modal-title" name="modal-title" class="modal-title">
+    <label for="modal-content">Подробное описание</label>
+    <input type="text" id="add-modal-content" name="modal-content" class="modal-content">
+    <div class="modal-buttons">
+    <input type="button" id="add-modal-close" name="modal-button-close" class="modal-button-close" value="Отмена">
+    <input type="button" id="add-modal-ok" name="modal-button-ok" class="modal-button-ok" value="Ок">
+    </div>
+  </div>
+  <div class="modal remove unactive">
+    <h2 class="modal-header">Удалить тикет</h2>
+    <p class="modal-warning">Вы уверены, что хотите удалить тикет? Это действие необратимо.</p>
+    <div class="modal-buttons">
+      <input type="button" id="remove-modal-close" name="modal-button-close" class="modal-button-close" value="Отмена">
+      <input type="button" id="remove-modal-ok" name="modal-button-ok" class="modal-button-ok" value="Ок">
+      </div>
+  </div>
+  <div class="modal edit unactive">
+    <h2 class="modal-header">Изменить тикет</h2>
+    <label for="modal-title">Краткое описание</label>
+    <input type="text" id="edit-modal-title" name="modal-title" class="modal-title">
+    <label for="modal-content">Подробное описание</label>
+    <input type="text" id="edit-modal-content" name="modal-content" class="modal-content">
+    <div class="modal-buttons">
+    <input type="button" id="edit-modal-close" name="modal-button-close" class="modal-button-close" value="Отмена">
+    <input type="button" id="edit-modal-ok" name="modal-button-ok" class="modal-button-ok" value="Ок">
+    </div>
+  </div>
+</div>
+</body>
+</html>
